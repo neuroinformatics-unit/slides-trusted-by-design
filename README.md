@@ -1,6 +1,6 @@
 # Trusted by design
 
-_How to set up your research software for community adoption._
+_set up your research software for community adoption._
 
 This repository contains the slides for @niksirbi's [talk](https://fosdem.org/2026/schedule/event/VPJH8F-trusted-by-design/) at the [Open Research devroom of FOSDEM 2026](https://fosdem.org/2026/schedule/track/open-research/)
 

@@ -1,13 +1,15 @@
 ---
-title: A template presentation
-subtitle: Made with Quarto and RevealJS
-author: SWC/GCNU Neuroinformatics Unit
-date: today
+title: Trusted by design
+subtitle: set up your research software for community adoption
+author: Niko Sirmpilatze @ FOSDEM 2026
+date: 2026-02-01 
 format:
   revealjs:
-    footer: "Location | Event | Date"
-my-custom-stuff:
-   my-reuseable-variable: "I can use this wherever I want in the markdown, and change it in only once place :)"
+    footer: "[neuroinformatics.dev/slides-trusted-by-design](https://neuroinformatics.dev/slides-trusted-by-design/)"
+links:
+   movement: "https://movement.neuroinformatics.dev"
+   slides: "https://neuroinformatics.dev/slides-trusted-by-design/"
+   blog: "https://neuroinformatics.dev/blog/trusted-by-design_intro.html"
 ---
 
 ## Contents
@@ -38,35 +40,6 @@ else:
   # raise some error maybe?
 ```
 
-## A code block that's actually executed at render-time
-
-```{python}
-#| echo: true
-#| code-fold: true
-
-from pathlib import Path
-
-print("Hello world")
-```
-
-## You can execute code without showing that you have by using #|echo: false
-```{python}
-#| echo: false
-
-from pathlib import Path
-
-print("Hello world")
-```
-
-{{< include slides/extra_slide.qmd >}}
-
-## An example image
-
-Include an image:
-
-![](img/bg_logo_wide.png){width=900 fig-align=center}
-
-
 ## Link and a preview a webpage:
 
 ::: {style="text-align: center; margin-top: 1em"}
@@ -77,8 +50,8 @@ Include an image:
 
 Variables defined in the metadata is re-useable anywhere
 
-* {{< meta my-custom-stuff.my-reuseable-variable >}}
-* {{< meta my-custom-stuff.my-reuseable-variable >}}
+* {{< meta links.movement >}}
+* {{< meta links.blog >}}
 
 ## Admonitions / Callouts
 
