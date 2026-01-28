@@ -12,33 +12,111 @@ links:
    blog: "https://neuroinformatics.dev/blog/trusted-by-design_intro.html"
 ---
 
-## Contents
+## whoami
 
-We can use all the normal markdown features here, like:
+- Neuroscientist & Research Software Engineer 🧠🐭💻
+- [Neuroinformatics Unit](https://neuroinformatics.dev), [Sainsbury Wellcome Centre](https://www.sainsburywellcome.org/web/), UCL
+- Fellow of the [Software Sustainability Institute](https://www.software.ac.uk/)
+- Lead developer of [movement](https://movement.neuroinformatics.dev)
 
-- Bullet lists
-- **Bold text**
-- *Italic text*
-- `Inline code`
+::: {.callout-tip appearance="simple" icon=false} 
+## {{< fa paper-plane >}} Find me online
 
-::: aside
-[See also example RevealJS slides in the Quarto docs.](https://quarto.org/docs/presentations/revealjs/)
+{{< fa brands github >}} [niksirbi](https://github.com/niksirbi) |
+{{< fa brands mastodon >}} [\@niksirbi\@neuromatch.social](https://neuromatch.social/@niksirbi) |
+{{< fa globe >}} {{< iconify simple-icons bluesky >}} [nikosirmpilatze.com](https://nikosirmpilatze.com)
 :::
 
-## Just a code block, nothing gets executed...
+## Neuroinformatics Unit (NIU) {.smaller}
 
-... but there is some fancy highlighting
+:::: {columns}
 
-```{.python code-line-numbers="1|3|4-9"}
-from pathlib import Path
+::: {.column width="50%"}
+![](img/niu-team-photo.jpg)
+:::
 
-home_path = Path.home()
-if home_path.exists():
-  data_path = home_path / "data"
-else:
-  pass
-  # raise some error maybe?
-```
+::: {.column width="50%"}
+> A **research software engineering** (RSE) team... dedicated to the development of high quality, accurate, robust, easy to use and maintainable open-source software for neuroscience and machine learning.
+:::
+
+::::
+
+::: footer
+[neuroinformatics.dev](https://neuroinformatics.dev)
+:::
+
+## Built and maintained by us {.smaller}
+
+
+{{< fa brands python >}} ~25 open-source Python packages, including:
+
+
+::: {.fragment fragment-index=1}
+::: {.callout-warning appearance="simple" icon="false"} 
+{{< fa brain >}} **BrainGlobe**: computational neuroanatomy
+
+  - {{< fa download >}} >3 million downloads
+  - {{< fa brands github >}} 125+ contributors
+  - {{< fa brands python >}} 70+ dependent packages
+  - {{< fa newspaper >}} cited 350+ times
+:::
+:::
+
+
+::: {.fragment fragment-index=2}
+::: {.callout-tip appearance="simple" icon="false"} 
+{{< fa spider >}} **movement**: animal behaviour
+
+  - {{< fa download >}} >80k downloads
+  - {{< fa brands github >}} 30+ contributors
+:::
+:::
+
+
+::: {.fragment fragment-index=1}
+![](img/BG_logo.png){.absolute top=170 right=300  height="125"}
+![](img/tracing.png){.absolute top=160 right=50  height="150"}
+:::
+
+::: {.fragment fragment-index=2}
+![](img/movement_logo_on-transparent.png){.absolute top=345 right=275  height="125"}
+![](img/animals-in-motion-logo.png){.absolute top=350 right=75 height="120"}
+:::
+
+
+::: footer
+[neuroinformatics.dev](https://neuroinformatics.dev) | [brainglobe.info](https://brainglobe.info)
+:::
+
+
+## movement: identifying the gap 
+
+![](img/gap_after_tracking.png)
+
+
+## movement: abstract {.smaller}
+
+![](img/movement_overview.png){fig-align="center"}
+
+::: footer
+[movement.neuroinformatics.dev](https://movement.neuroinformatics.dev/)
+:::
+
+## The even bigger picture {.smaller}
+
+*Long-term vision:* `movement` as the *scikit-image* for animal motion data.
+
+![](img/Scientific-Python-Ecosystem_movement.png){height="420px"}
+
+::: {.fragment}
+
+::: {.callout-tip appearance="simple"} 
+If you prefer the R ecosystem, check out the [animovement](https://animovement.github.io/animovement/) toolbox
+by [Mikkel Roald-Arbøl](https://roald-arboel.com).
+:::
+
+:::
+
 
 ## Link and a preview a webpage:
 
@@ -83,6 +161,14 @@ and then use the syntax `[@citekey]` to cite them.
 ::: aside
 [Read more about Quarto citations](https://quarto.org/docs/authoring/citations.html#sec-citations).
 :::
+
+## Recommended readings {.smaller}
+
+- [Open Source Guide on Leadership and Governance](https://opensource.guide/leadership-and-governance/)
+- [Governance of Open Source Software](https://governingopen.com/)
+- [Governance for Software Engineers](https://speaking.unlockopen.com/t7cQZt/open-source-governance-for-software-engineers#sne53yn)
+- [CommunityRule](https://communityrule.info/)
+- [GitHub's Minimum Viable Governance](https://github.com/github/MVG)
 
 ## References {.smaller}
 
