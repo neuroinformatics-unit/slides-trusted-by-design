@@ -1,2 +1,3 @@
+codespell
 jupyter
 jupyter-cache

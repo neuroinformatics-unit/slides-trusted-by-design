@@ -126,7 +126,7 @@ by [Mikkel Roald-Arbøl](https://roald-arboel.com).
 
 ## Use a variable several times
 
-Variables defined in the metadata is re-useable anywhere
+Variables defined in the metadata is reusable anywhere
 
 * {{< meta links.movement >}}
 * {{< meta links.blog >}}
