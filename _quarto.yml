@@ -1,6 +1,10 @@
 project:
   type: default
   output-dir: build
+  render:
+    - index.qmd
+  resources:
+    - colored-particles
 
 bibliography: references.bib
 
@@ -23,14 +27,12 @@ format:
     auto-play-media: true
     code-overflow: wrap
     highlight-style: atom-one
+    preload-iframes: true
     from: markdown+emoji   # enable emoji support
     mermaid:
       theme: neutral
       fontFamily: arial
       curve: linear
     title-slide-attributes:
-      data-background-color: "#000000"
-      data-background-image: "img/swc-building.jpg"
-      data-background-size: "cover"
-      data-background-position: "center"
-      data-background-opacity: "0.6"
+      data-background-iframe: "colored-particles/index.html"
+      data-background-interactive: true

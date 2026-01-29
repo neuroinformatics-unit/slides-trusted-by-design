@@ -12,12 +12,38 @@ links:
    blog: "https://neuroinformatics.dev/blog/trusted-by-design_intro.html"
 ---
 
+## Research software {.smaller}
+
+So, you want to create an open-source research software package
+
+  — and not just for yourself or your group.
+
+::: {.callout-note appearance="simple"}
+## research software package
+
+a reusable library or toolbox, designed to be installed on a researcher's computer.
+
+I will variably refer to this as "software", "package", "project" or "tool" throughout.
+:::
+
+How do you persuade others to use it, contribute to it, and **trust it**?
+
+## Open-source projects rise and fall on trust
+
+Practices that signal reliability and sustainability:
+
+::: {.incremental}
+1. Defining your software's **mission and scope**.
+2. Making a reasonable **first release** and **following it up** with consistency.
+3. Embracing **radically open communication**.
+:::
+
 ## whoami
 
 - Neuroscientist & Research Software Engineer 🧠🐭💻
-- [Neuroinformatics Unit](https://neuroinformatics.dev), [Sainsbury Wellcome Centre](https://www.sainsburywellcome.org/web/), UCL
+- [Sainsbury Wellcome Centre](https://www.sainsburywellcome.org/web/), UCL
 - Fellow of the [Software Sustainability Institute](https://www.software.ac.uk/)
-- Lead developer of [movement](https://movement.neuroinformatics.dev)
+- Participant in the [Birdaro Training Program](https://www.birdaro.org/birdaro-training-program-pilot-cohort/)
 
 ::: {.callout-tip appearance="simple" icon=false} 
 ## {{< fa paper-plane >}} Find me online
@@ -46,7 +72,6 @@ links:
 :::
 
 ## Built and maintained by us {.smaller}
-
 
 {{< fa brands python >}} ~25 open-source Python packages, including:
 
@@ -89,6 +114,54 @@ links:
 :::
 
 
+# Your mission & scope {background-iframe="colored-particles/index.html"}
+
+::: footer
+Colored particles: [https://codepen.io/matteobruni/pen/ZExLYyg](https://codepen.io/matteobruni/pen/ZExLYyg)
+:::
+
+## Scoping out your project
+
+- How do researchers do it?
+- Writing an abstract
+
+## How about software abstracts? {.smaller}
+
+**mission statement:** single-sentence, high-level description of the project's purpose.
+
+::: {.fragment}
+Followed by one or more of the following:
+
+- **Aims:** a list of key objectives
+- **Scope:** the set of tasks it is designed to enable
+- **Design principles:** key decisions that shape the software's architecture
+:::
+
+
+## Example: BrainGlobe
+
+<iframe src="https://brainglobe.info/index.html" title="BrainGlobe Homepage" style="max-height: 110%; max-width: 125%; width: 125%; height: 110%; transform: scale(0.8); transform-origin: top left;"></iframe>
+
+::: footer
+Source: [brainglobe.info](https://brainglobe.info)
+:::
+
+## Example: napari
+
+<iframe src="https://napari.org/stable/community/mission_and_values.html" title="napari mission and values" style="max-height: 110%; max-width: 125%; width: 125%; height: 110%; transform: scale(0.8); transform-origin: top left;"></iframe>
+
+::: footer
+Source: [napari.org/stable/community/mission_and_values.html](https://napari.org/stable/community/mission_and_values.html)
+:::
+
+## Example: pandas
+
+<iframe src="https://pandas.pydata.org/about/" title="About pandas" style="max-height: 110%; max-width: 125%; width: 125%; height: 110%; transform: scale(0.8); transform-origin: top left;"></iframe>
+
+::: footer
+Source: [pandas.pydata.org/about/](https://pandas.pydata.org/about/)
+:::
+
 ## movement: identifying the gap 
 
 ![](img/gap_after_tracking.png)
@@ -123,6 +196,10 @@ by [Mikkel Roald-Arbøl](https://roald-arboel.com).
 ::: {style="text-align: center; margin-top: 1em"}
 [interoperable Python-based tools for computational neuroanatomy](https://brainglobe.info/index.html){preview-link="true" style="text-align: center"}
 :::
+
+## Embed a webpage as iframe
+
+<iframe src="https://brainglobe.info/tutorials/index.html" title="BrainGlobe Tutorials" style="max-height: 110%; max-width: 125%; width: 125%; height: 110%; transform: scale(0.8); transform-origin: top left;"></iframe>
 
 ## Use a variable several times
 
