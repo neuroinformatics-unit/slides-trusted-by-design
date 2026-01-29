@@ -9,33 +9,44 @@ format:
 links:
    movement: "https://movement.neuroinformatics.dev"
    slides: "https://neuroinformatics.dev/slides-trusted-by-design/"
-   blog: "https://neuroinformatics.dev/blog/trusted-by-design_intro.html"
+   blog: "neuroinformatics.dev/blog/trusted-by-design_intro.html"
 ---
 
-## Research software {.smaller}
+## So, you want to make a research software package {.smaller}
 
-So, you want to create an open-source research software package
-
-  — and not just for yourself or your group.
-
+::: {.fragment}
 ::: {.callout-note appearance="simple"}
-## research software package
+## What do I mean by that?
 
-a reusable library or toolbox, designed to be installed on a researcher's computer.
-
-I will variably refer to this as "software", "package", "project" or "tool" throughout.
+- An open-source reusable library or toolbox, designed to be installed on other researchers' computers.
+- I will use *software*, *package*, *project* or *tool* interchangeably.
+:::
 :::
 
-How do you persuade others to use it, contribute to it, and **trust it**?
+::: {.fragment}
+How do you persuade others to
 
-## Open-source projects rise and fall on trust
+- use it
+- contribute to it
+- **trust it**?
+:::
 
-Practices that signal reliability and sustainability:
+## How do you build trust?
+
+You can make your software **trusted by design** by focusing on 3 key aspects:
 
 ::: {.incremental}
 1. Defining your software's **mission and scope**.
 2. Making a reasonable **first release** and **following it up** with consistency.
 3. Embracing **radically open communication**.
+:::
+
+::: {.fragment}
+::: {.callout-tip appearance="simple" icon=false}
+## {{< fa blog >}} Blogpost series
+
+[{{< meta links.blog >}}](https://{{< meta links.blog >}})
+:::
 :::
 
 ## whoami
@@ -81,9 +92,9 @@ Practices that signal reliability and sustainability:
 {{< fa brain >}} **BrainGlobe**: computational neuroanatomy
 
   - {{< fa download >}} >3 million downloads
-  - {{< fa brands github >}} 125+ contributors
+  - {{< fa brands github >}} 140+ contributors
   - {{< fa brands python >}} 70+ dependent packages
-  - {{< fa newspaper >}} cited 350+ times
+  - {{< fa newspaper >}} cited 400+ times
 :::
 :::
 
@@ -120,38 +131,44 @@ Practices that signal reliability and sustainability:
 Colored particles: [https://codepen.io/matteobruni/pen/ZExLYyg](https://codepen.io/matteobruni/pen/ZExLYyg)
 :::
 
-## Scoping out your project
+## Scoping out your project {.smaller}
 
-- How do researchers do it?
-- Writing an abstract
+How do researchers do it for scientific projects?
 
-## How about software abstracts? {.smaller}
+:::: {layout-ncol=2}
 
+::: {.fragment}
+- Write an **abstract** before you even start!
+- It's not your destination, but it's a useful **compass**.
+:::
+
+::: {.fragment}
+![Source: mitcommlab.mit.edu](img/abstract_formula.png){height="300px" fig-align="left"}
+:::
+
+::::
+
+## How about software abstracts?
+
+::: {.fragment}
 **mission statement:** single-sentence, high-level description of the project's purpose.
+:::
 
 ::: {.fragment}
 Followed by one or more of the following:
 
-- **Aims:** a list of key objectives
-- **Scope:** the set of tasks it is designed to enable
-- **Design principles:** key decisions that shape the software's architecture
+- **Specific aims**
+- **Scope**
+- **Design principles**
 :::
 
 
 ## Example: BrainGlobe
 
-<iframe src="https://brainglobe.info/index.html" title="BrainGlobe Homepage" style="max-height: 110%; max-width: 125%; width: 125%; height: 110%; transform: scale(0.8); transform-origin: top left;"></iframe>
+<iframe src="https://brainglobe.info/index.html?theme=light" title="BrainGlobe Homepage" style="max-height: 110%; max-width: 125%; width: 125%; height: 110%; transform: scale(0.8); transform-origin: top left;"></iframe>
 
 ::: footer
 Source: [brainglobe.info](https://brainglobe.info)
-:::
-
-## Example: napari
-
-<iframe src="https://napari.org/stable/community/mission_and_values.html" title="napari mission and values" style="max-height: 110%; max-width: 125%; width: 125%; height: 110%; transform: scale(0.8); transform-origin: top left;"></iframe>
-
-::: footer
-Source: [napari.org/stable/community/mission_and_values.html](https://napari.org/stable/community/mission_and_values.html)
 :::
 
 ## Example: pandas
@@ -162,71 +179,122 @@ Source: [napari.org/stable/community/mission_and_values.html](https://napari.org
 Source: [pandas.pydata.org/about/](https://pandas.pydata.org/about/)
 :::
 
-## movement: identifying the gap 
+## Example: napari
 
-![](img/gap_after_tracking.png)
+<iframe src="https://napari.org/stable/community/mission_and_values.html?theme=light" title="napari mission and values" style="max-height: 110%; max-width: 125%; width: 125%; height: 110%; transform: scale(0.8); transform-origin: top left;"></iframe>
 
+::: footer
+Source: [napari.org/stable/community/mission_and_values.html](https://napari.org/stable/community/mission_and_values.html)
+:::
 
-## movement: abstract {.smaller}
+## Case study: movement
 
-![](img/movement_overview.png){fig-align="center"}
+How did we come up with an abstract for [movement](https://movement.neuroinformatics.dev)?
+
+It starts with lot and lot of research...
 
 ::: footer
 [movement.neuroinformatics.dev](https://movement.neuroinformatics.dev/)
 :::
 
-## The even bigger picture {.smaller}
+## movement: identifying the gap 
 
-*Long-term vision:* `movement` as the *scikit-image* for animal motion data.
+::: {.r-stack}
+![](img/gap_after_tracking_A.png){.fragment height="250"}
+
+![](img/gap_after_tracking.png){.fragment height="250"}
+
+:::
+
+::: footer
+[movement.neuroinformatics.dev](https://movement.neuroinformatics.dev/)
+:::
+
+## movement: choosing the stack
 
 ![](img/Scientific-Python-Ecosystem_movement.png){height="420px"}
 
+::: footer
+[movement.neuroinformatics.dev](https://movement.neuroinformatics.dev/)
+:::
+
+## movement: abstract {.smaller}
+
+<iframe src="https://movement.neuroinformatics.dev/latest/index.html?theme=light" title="movement Homepage" style="max-height: 110%; max-width: 125%; width: 125%; height: 110%; transform: scale(0.8); transform-origin: top left;"></iframe>
+
+::: footer
+[movement.neuroinformatics.dev](https://movement.neuroinformatics.dev/)
+:::
+
+## The perks of having an abstract
+
+::: {.callout-tip}
+Have your abstract defined **publicly** and **from the start**
+:::
+
+::: {.incremental}
+- How does that help with building trust?
+- Let's look at concrete scenarios, inspired by real events.
+:::
+
+## While writing the abstract
+
+::: {.incremental}
+1. You discover that existing tools already cover your project's scope :tada:
+2. The deeper you dig, the more you see a pressing need. Articulating it in writing gives you clarity of purpose :fist:
+:::
+
+
+## During the project's early days
+
+::: {.incremental}
+1. People grasp your project's essence at a glance. You attract the right attention and gain early adopters :rocket:
+2. Someone reaches out and points you to their cool project. It seems quite similar to yours, but you'd missed it in your initial research; it happens :thinking:
+:::
+
 ::: {.fragment}
 
-::: {.callout-tip appearance="simple"} 
-If you prefer the R ecosystem, check out the [animovement](https://animovement.github.io/animovement/) toolbox
-by [Mikkel Roald-Arbøl](https://roald-arboel.com).
+::: {.callout-tip appearance="simple"}
+## A real-world example
+In the early days of **movement**, [Mikkel Roald-Arbøl](https://roald-arboel.com) reached out to us with [this message](https://neuroinformatics.zulipchat.com/#narrow/channel/406001-Movement/topic/R.20Implementation/near/454864499):
 :::
 
 :::
 
+## {.smaller}
 
-## Link and a preview a webpage:
+> Hi everyone!
+> 
+> **I've followed the project from the side-lines** for a few months now, and really enjoy seeing this type of project with a community behind it. I have over the past few years been curating **a similar package for R**, but mostly for personal use. However, many of the ideas behind and much of the **functionality seems to overlap**, and I was wondering whether it could make sense to talk together about features and for me to adapt my package to `movement`? **Would be great to have someone to work together** with on which features are useful, what are best practices, etc. and **have packages for both Python and R**. (my package is currently named `anibehavr`, but I just checked, and `movement` is not taken as a project name on CRAN).
+>
+> I am currently in the final months of writing my PhD, but will have more time to work on it afterwards. :-)
+>
+> Cheers, Mikkel
 
-::: {style="text-align: center; margin-top: 1em"}
-[interoperable Python-based tools for computational neuroanatomy](https://brainglobe.info/index.html){preview-link="true" style="text-align: center"}
+## Throughout the project's lifecycle:
+
+::: {.incremental}
+5. Someone raises a GitHub issue requesting a feature. Your written scope guides you :compass:
+6. You disagree with a collaborator on implementation. Your design principles anchor you :anchor:
 :::
 
-## Embed a webpage as iframe
+## Takeaways {.smaller}
 
-<iframe src="https://brainglobe.info/tutorials/index.html" title="BrainGlobe Tutorials" style="max-height: 110%; max-width: 125%; width: 125%; height: 110%; transform: scale(0.8); transform-origin: top left;"></iframe>
+::: {.callout-tip appearance="simple"}
+## Now imagine these scenarios without a public abstract
 
-## Use a variable several times
-
-Variables defined in the metadata is reusable anywhere
-
-* {{< meta links.movement >}}
-* {{< meta links.blog >}}
-
-## Admonitions / Callouts
-
-:::{.callout-note}
-## Note Callout
-
-This is a note callout.
+- Misunderstandings are more likely to arise.
+- Decisions that felt principled to you may look arbitrary to others—and that erodes trust.
 :::
 
-:::{.callout-tip}
-## Tip Callout
+::: {.incremental}
+Your **software abstract** is more than a planning document—it's a trust signal.
 
-This is a tip callout.
+  - You invite collaboration and scrutiny early.
+  - You show that you're building something thoughtfully
+  - When disagreements arise, you have something to point to.
 :::
 
-:::{.callout-warning}
-## Warning Callout
-
-This is a warning callout.
-:::
 
 ## Citing references
 
