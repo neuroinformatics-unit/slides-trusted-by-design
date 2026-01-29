@@ -6,8 +6,6 @@ project:
   resources:
     - colored-particles
 
-bibliography: references.bib
-
 execute:
   enabled: true
 

@@ -33,11 +33,11 @@ How do you persuade others to
 
 ## How do you build trust?
 
-You can make your software **trusted by design** by focusing on 3 key aspects:
+Make your software **trusted by design** by:
 
 ::: {.incremental}
 1. Defining your software's **mission and scope**.
-2. Making a reasonable **first release** and **following it up** with consistency.
+2. Making a reasonable **first release** and **following it up** consistently.
 3. Embracing **radically open communication**.
 :::
 
@@ -210,13 +210,6 @@ It starts with lot and lot of research...
 [movement.neuroinformatics.dev](https://movement.neuroinformatics.dev/)
 :::
 
-## movement: choosing the stack
-
-![](img/Scientific-Python-Ecosystem_movement.png){height="420px"}
-
-::: footer
-[movement.neuroinformatics.dev](https://movement.neuroinformatics.dev/)
-:::
 
 ## movement: abstract {.smaller}
 
@@ -226,98 +219,180 @@ It starts with lot and lot of research...
 [movement.neuroinformatics.dev](https://movement.neuroinformatics.dev/)
 :::
 
-## The perks of having an abstract
-
-::: {.callout-tip}
-Have your abstract defined **publicly** and **from the start**
-:::
-
-::: {.incremental}
-- How does that help with building trust?
-- Let's look at concrete scenarios, inspired by real events.
-:::
-
-## While writing the abstract
-
-::: {.incremental}
-1. You discover that existing tools already cover your project's scope :tada:
-2. The deeper you dig, the more you see a pressing need. Articulating it in writing gives you clarity of purpose :fist:
-:::
-
-
-## During the project's early days
-
-::: {.incremental}
-1. People grasp your project's essence at a glance. You attract the right attention and gain early adopters :rocket:
-2. Someone reaches out and points you to their cool project. It seems quite similar to yours, but you'd missed it in your initial research; it happens :thinking:
-:::
-
-::: {.fragment}
+## The perks of having an abstract {.smaller}
 
 ::: {.callout-tip appearance="simple"}
-## A real-world example
-In the early days of **movement**, [Mikkel Roald-Arbøl](https://roald-arboel.com) reached out to us with [this message](https://neuroinformatics.zulipchat.com/#narrow/channel/406001-Movement/topic/R.20Implementation/near/454864499):
+## Make your abstract **public from the start**, and reap the benefits.
+
+Let's look at some scenarios throughout your project's lifecycle.
 :::
 
-:::
+*While writing the abstract:*
 
-## {.smaller}
+1. You discover that existing tools already cover your project's scope :tada:
+2. Articulating the need in writing gives you clarity of purpose :fist:
 
-> Hi everyone!
-> 
-> **I've followed the project from the side-lines** for a few months now, and really enjoy seeing this type of project with a community behind it. I have over the past few years been curating **a similar package for R**, but mostly for personal use. However, many of the ideas behind and much of the **functionality seems to overlap**, and I was wondering whether it could make sense to talk together about features and for me to adapt my package to `movement`? **Would be great to have someone to work together** with on which features are useful, what are best practices, etc. and **have packages for both Python and R**. (my package is currently named `anibehavr`, but I just checked, and `movement` is not taken as a project name on CRAN).
->
-> I am currently in the final months of writing my PhD, but will have more time to work on it afterwards. :-)
->
-> Cheers, Mikkel
+*During the project's early days:*
 
-## Throughout the project's lifecycle:
+3. People grasp your project's essence. You attract suitable early adopters :rocket:
+4. Someone points you to their cool project. It looks similar to yours :thinking:
 
-::: {.incremental}
-5. Someone raises a GitHub issue requesting a feature. Your written scope guides you :compass:
+*During the project's mature phase:*
+
+5. Someone requests a feature. Your written scope guides you :compass:
 6. You disagree with a collaborator on implementation. Your design principles anchor you :anchor:
 :::
 
-## Takeaways {.smaller}
+## A real-world example {.smaller}
+
+In the early days of **movement**, [Mikkel Roald-Arbøl](https://roald-arboel.com) reached out to us with [this message](https://neuroinformatics.zulipchat.com/#narrow/channel/406001-Movement/topic/R.20Implementation/near/454864499):
+
+::: {.fragment}
+> Hi everyone!
+> 
+> **I've followed the project from the side-lines** for a few months now, and really enjoy seeing this type of project with a community behind it. I have over the past few years been curating **a similar package for R**, but mostly for personal use. However, many of the ideas behind and much of the **functionality seems to overlap**, and I was wondering whether it could make sense to talk together about features and for me to adapt my package to `movement`? **Would be great to have someone to work together** with on which features are useful, what are best practices, etc. and **have packages for both Python and R**. (my package is currently named `anibehavr`, but I just checked, and `movement` is not taken as a project name on CRAN).
+:::
+
+## Takeaways
 
 ::: {.callout-tip appearance="simple"}
-## Now imagine these scenarios without a public abstract
-
-- Misunderstandings are more likely to arise.
-- Decisions that felt principled to you may look arbitrary to others—and that erodes trust.
+Now imagine these scenarios without a public abstract.
 :::
 
-::: {.incremental}
-Your **software abstract** is more than a planning document—it's a trust signal.
+::: {.fragment}
+Your **software abstract** is a **trust signal**.
 
   - You invite collaboration and scrutiny early.
-  - You show that you're building something thoughtfully
-  - When disagreements arise, you have something to point to.
+  - You show that you're building thoughtfully.
+  - In disagreements, you have something to point to.
+:::
+
+# Release early, release often {background-iframe="colored-particles/index.html"}
+
+> Eric S. Raymond, [The Cathedral and the Bazaar](https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar)
+
+::: footer
+Colored particles: [https://codepen.io/matteobruni/pen/ZExLYyg](https://codepen.io/matteobruni/pen/ZExLYyg)
+:::
+
+## The Cathedral and the Bazaar {.smaller}
+
+::: {layout="[[-5, 36, -10, 44, -5]]"}
+
+![](img/notre-dame.jpg){.fragment}
+
+![](img/el-khalili.jpg){.fragment}
+
+:::
+
+::: footer
+Images: [Notre-Dame Cathedral, Paris, by *Zoriah*](https://www.flickr.com/photos/46676910@N00/46892066664) | [Khan el-Khalili Bazaar, Cairo, *by Christopher Chan*](https://www.flickr.com/photos/17751217@N00/11594465684)
 :::
 
 
-## Citing references
+## Embrace the Bazaar
 
-- To cite references, include them in the `references.bib` BibTeX file
-and then use the syntax `[@citekey]` to cite them.
-- For example, our preprint of the Blackcap brain atlas [@blackcap_preprint].
-- You can preview the reference entry by hovering over the citation, cool!
+:::: {columns}
 
-::: aside
-[Read more about Quarto citations](https://quarto.org/docs/authoring/citations.html#sec-citations).
+::: {.column width="60%"}
+- How can the Bazaar leads to more trust and community adoption long-term?
+- Let's look at what *early* and *often* mean in concrete terms, for research software.
 :::
 
-## Recommended readings {.smaller}
-
-- [Open Source Guide on Leadership and Governance](https://opensource.guide/leadership-and-governance/)
-- [Governance of Open Source Software](https://governingopen.com/)
-- [Governance for Software Engineers](https://speaking.unlockopen.com/t7cQZt/open-source-governance-for-software-engineers#sne53yn)
-- [CommunityRule](https://communityrule.info/)
-- [GitHub's Minimum Viable Governance](https://github.com/github/MVG)
-
-## References {.smaller}
-
-This is how you create a references section, i.e. a bibliography.
-
-::: {#refs}
+::: {.column width="40%"}
+![](img/el-khalili.jpg)
 :::
+
+::::
+
+::: footer
+Image: [Khan el-Khalili Bazaar, Cairo, *by Christopher Chan*](https://www.flickr.com/photos/17751217@N00/11594465684)
+:::
+
+## Your first release
+
+Out team's check-list for a **minimum viable product (MVP)**:
+
+::: {.incremental}
+1. The software contains at least one useful feature.
+2. That feature is well documented, incl. usage examples.
+3. The software installs seamlessly on target platforms.
+:::
+
+::: {.fragment}
+::: {.callout-warning appearance="simple"}
+You can't have all three: built fast, easy to install, and feature-complete.
+:::
+:::
+
+## Focus on a single useful feature
+
+::: {.incremental}
+- Keeps you focused on a concrete milestone :checkered_flag:
+- Won't be perceived as trivial if you've clearly articulated your mission and scope :wink:
+- Goal is to reach a few early adopters fast :dart:
+:::
+
+## Seemless installation is crucial
+
+::: {.incremental}
+- You don't get a second chance at making a first impression
+- It's hard: *dependency hell* is called that for a reason
+- Manage expectations and state supported systems up-front.
+:::
+
+::: {.fragment}
+::: {.callout-warning appearance="simple"}
+Don't underestimate the amount of work between *works on my machine* and *works on every machine my target audience may use*.
+:::
+:::
+
+## Subsequent releases
+
+Rinse and repeat:
+
+1. Release a few new features at a time;
+2. Avoid releasing undocumented features;
+3. Make sure you don't unknowingly break existing functionality.
+
+::: {.callout-tip appearance="simple"}
+Move in small, incremental steps and minimise surprises.
+:::
+
+## Incremental releases rock :metal: {.smaller}
+
+::: {.fragment fragment-index=1}
+*For your team:*
+
+- Easier course-correction
+- Small wins to keep morale high
+:::
+
+::: {.fragment fragment-index=2}
+*For your users:*
+
+- Can adapt their workflows gradually 
+- Clear release notes are essential!
+:::
+
+::: {.fragment fragment-index=3}
+*For the ecosystem:*
+
+- Predictability is currency. 
+- Respect your neighbours.
+:::
+
+::: {.fragment fragment-index=3}
+![](img/dependency.png){.absolute top=100 right=50 height="500"}
+:::
+
+::: footer
+Image: [Dependency, *by xkcd.com*](https://xkcd.com/2347/)
+:::
+
+## The takeaway {.center}
+
+The trust you build through consistent, predictable releases compounds over time—worth far more than the polish you sacrifice by not waiting for perfection.
+
+
+
