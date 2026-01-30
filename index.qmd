@@ -158,12 +158,22 @@ Source: [brainglobe.info](https://brainglobe.info)
 Source: [napari.org](https://napari.org)
 :::
 
-## A graphical abstract {.smaller}
+## *movement*'s graphical abstract {.smaller}
 
 ![](img/movement_overview.png)
 
 ::: footer
 [movement.neuroinformatics.dev](https://movement.neuroinformatics.dev/)
+:::
+
+## {.smaller}
+
+In the early days of **movement**, [Mikkel Roald-Arbøl](https://roald-arboel.com) reached out to us with [this message](https://neuroinformatics.zulipchat.com/#narrow/channel/406001-Movement/topic/R.20Implementation/near/454864499):
+
+::: {.fragment}
+> Hi everyone!
+> 
+> **I've followed the project from the side-lines** for a few months now, ... I have over the past few years been curating **a similar package for R**, ... **functionality seems to overlap**, ... **Would be great to have someone to work together** with on which features are useful, what are best practices, etc. and **have packages for both Python and R**.
 :::
 
 ## The perks of a having abstract
@@ -174,16 +184,6 @@ Do it **publicly** and **up-front**.
 - You sharpen your vision. :fist:
 - You invite collaboration and scrutiny early. :hugs:
 - In disagreements, you have something to point to. :compass:
-:::
-
-## A real-world example {.smaller}
-
-In the early days of **movement**, [Mikkel Roald-Arbøl](https://roald-arboel.com) reached out to us with [this message](https://neuroinformatics.zulipchat.com/#narrow/channel/406001-Movement/topic/R.20Implementation/near/454864499):
-
-::: {.fragment}
-> Hi everyone!
-> 
-> **I've followed the project from the side-lines** for a few months now, ... I have over the past few years been curating **a similar package for R**, ... **functionality seems to overlap**, ... **Would be great to have someone to work together** with on which features are useful, what are best practices, etc. and **have packages for both Python and R**.
 :::
 
 # Release early, release often {background-iframe="colored-particles/index.html"}
@@ -211,7 +211,7 @@ Images: [Notre-Dame Cathedral, Paris, by *Zoriah*](https://www.flickr.com/photos
 
 ## Your first release
 
-Out team's check-list for a **minimum viable product (MVP)**:
+Our team's check-list for a **minimum viable product (MVP)**:
 
 ::: {.fragment}
 1. The software contains at least one useful feature.
@@ -342,7 +342,7 @@ Make all changes through **publicly visible work.**
 
 ::::
 
-## Scale your comms with your community
+## Scale your comms alongside your community
 
 ![](img/movement_comms.png){height="300px"}
 
