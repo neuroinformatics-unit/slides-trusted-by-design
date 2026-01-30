@@ -12,41 +12,20 @@ links:
    blog: "neuroinformatics.dev/blog/trusted-by-design_intro.html"
 ---
 
-## So, you want to make a research software package {.smaller}
+## So, you want to make a research software package {.center}
 
 ::: {.fragment}
-::: {.callout-note appearance="simple"}
-## What do I mean by that?
-
-- An open-source reusable library or toolbox, designed to be installed on other researchers' computers.
-- I will use *software*, *package*, *project* or *tool* interchangeably.
-:::
+How do you persuade others to **use** it and **contribute** to it?
 :::
 
-::: {.fragment}
-How do you persuade others to
+## FOSS projects rise and fall on trust
 
-- use it
-- contribute to it
-- **trust it**?
-:::
-
-## How do you build trust?
-
-Make your software **trusted by design** by:
+Make your software **trusted by design**:
 
 ::: {.incremental}
-1. Defining your software's **mission and scope**.
-2. Making a reasonable **first release** and **following it up** consistently.
-3. Embracing **radically open communication**.
-:::
-
-::: {.fragment}
-::: {.callout-tip appearance="simple" icon=false}
-## {{< fa blog >}} Blogpost series
-
-[{{< meta links.blog >}}](https://{{< meta links.blog >}})
-:::
+1. Define your software's **mission and scope**.
+2. Make a reasonable **first release** and **follow it up** consistently.
+3. Embrace **radically open communication**.
 :::
 
 ## whoami
@@ -201,7 +180,7 @@ It started with lots and lots of research... :mag: :memo:
 ## movement: identifying the gap {.smaller}
 
 ::: {.r-stack}
-![](img/gap_after_tracking_A.png){.fragment height="250"}
+![](img/gap_after_tracking_A.png){height="250"}
 
 ![](img/gap_after_tracking.png){.fragment height="250"}
 
@@ -234,27 +213,24 @@ See also our [mission, scope, and design principles](https://movement.neuroinfor
 
 ## The perks of having an abstract {.smaller}
 
-Make your abstract **public from the start**, and reap the benefits. Scenarios:
+Let's look at some scenarios:
 
+::: {.fragment}
 ::: {.callout-tip appearance="simple" icon="false"}
 ## :memo: While writing the abstract
 
-- You discover there is no need :tada:
-- You gain clarity of purpose :fist:
+- Either you discover there is no need :tada:
+- Or you gain clarity of purpose :fist:
+:::
 :::
 
+::: {.fragment}
 ::: {.callout-tip appearance="simple" icon="false"}
 ## :rocket:During the project's early days
 
 - People grasp your project's essence. You attract suitable early adopters :rocket:
 - Someone points you to their cool project. It looks similar to yours :thinking:
 :::
-
-::: {.callout-tip appearance="simple" icon="false"}
-## :construction: Anytime during development
-
-- Someone requests a feature. Your written scope guides you :compass:
-- You disagree with a collaborator on implementation. Your design principles anchor you :anchor:
 :::
 
 ## A real-world example {.smaller}
@@ -267,18 +243,37 @@ In the early days of **movement**, [Mikkel Roald-Arbøl](https://roald-arboel.co
 > **I've followed the project from the side-lines** for a few months now, and really enjoy seeing this type of project with a community behind it. I have over the past few years been curating **a similar package for R**, but mostly for personal use. However, many of the ideas behind and much of the **functionality seems to overlap**, and I was wondering whether it could make sense to talk together about features and for me to adapt my package to `movement`? **Would be great to have someone to work together** with on which features are useful, what are best practices, etc. and **have packages for both Python and R**. (my package is currently named `anibehavr`, but I just checked, and `movement` is not taken as a project name on CRAN).
 :::
 
-## Takeaways
+## The perks of having an abstract {.smaller}
 
-::: {.callout-tip appearance="simple"}
-Now imagine these scenarios without a public abstract.
+Let's look at some scenarios:
+
+::: {.callout-tip appearance="simple" icon="false"}
+## :memo: While writing the abstract
+
+- Either you discover there is no need :tada:
+- Or you gain clarity of purpose :fist:
+:::
+
+::: {.callout-tip appearance="simple" icon="false"}
+## :rocket:During the project's early days
+
+- People grasp your project's essence. You attract suitable early adopters :rocket:
+- Someone points you to their cool project. It looks similar to yours :thinking:
 :::
 
 ::: {.fragment}
-Your **software abstract** is a **trust signal**.
+::: {.callout-tip appearance="simple" icon="false"}
+## :construction: Anytime during development
 
-  - You invite collaboration and scrutiny early.
-  - You show that you're building thoughtfully.
-  - In disagreements, you have something to point to.
+- Someone requests a feature. Your written scope guides you :compass:
+- You disagree with a collaborator on implementation. Your design principles anchor you :anchor:
+:::
+:::
+
+::: {.fragment}
+::: {.callout-tip appearance="simple"}
+Now imagine these scenarios without a public abstract.
+:::
 :::
 
 # Release early, release often {background-iframe="colored-particles/index.html"}
@@ -327,7 +322,7 @@ Image: [Khan el-Khalili Bazaar, Cairo, *by Christopher Chan*](https://www.flickr
 
 Out team's check-list for a **minimum viable product (MVP)**:
 
-::: {.incremental}
+::: {.fragment}
 1. The software contains at least one useful feature.
 2. That feature is well documented, incl. usage examples.
 3. The software installs seamlessly on target platforms.
@@ -339,7 +334,7 @@ You can't have all three: built fast, easy to install, and feature-complete.
 :::
 :::
 
-## Focus on a single useful feature
+## One feature is all you need
 
 ::: {.incremental}
 - Keeps you focused on a concrete milestone :checkered_flag:
@@ -347,16 +342,17 @@ You can't have all three: built fast, easy to install, and feature-complete.
 - Goal is to reach a few early adopters fast :dart:
 :::
 
-## Seemless installation is crucial
+## Seamless installation is crucial
+
+You don't get a second chance at making a first impression.
 
 ::: {.incremental}
-- You don't get a second chance at making a first impression
-- It's hard: *dependency hell* is called that for a reason
-- Manage expectations and state supported systems up-front.
+- It's hard: **dependency hell** is called that for a reason.
+- Manage expectations up-front.
 :::
 
 ::: {.fragment}
-::: {.callout-warning appearance="simple"}
+::: {.callout-warning}
 Don't underestimate the amount of work between *works on my machine* and *works on every machine my target audience may use*.
 :::
 :::
@@ -365,12 +361,15 @@ Don't underestimate the amount of work between *works on my machine* and *works 
 
 Rinse and repeat:
 
-1. Release a few new features at a time;
-2. Avoid releasing undocumented features;
+1. Release a few features at a time.
+2. Avoid releasing undocumented features.
 3. Make sure you don't unknowingly break existing functionality.
 
-::: {.callout-tip appearance="simple"}
-Move in small, incremental steps and minimise surprises.
+::: {.fragment}
+::: {.callout-tip}
+- Move in small, incremental steps and minimise surprises.
+- Invest in automation.
+:::
 :::
 
 ## Incremental releases rock :metal: {.smaller}
@@ -404,9 +403,140 @@ Move in small, incremental steps and minimise surprises.
 Image: [Dependency, *by xkcd.com*](https://xkcd.com/2347/)
 :::
 
-## The takeaway {.center}
+
+# Radically open communication {background-iframe="colored-particles/index.html"}
+
+::: {.fragment}
+From one-way announcements to multi-way interactions.
+:::
+
+::: footer
+Colored particles: [https://codepen.io/matteobruni/pen/ZExLYyg](https://codepen.io/matteobruni/pen/ZExLYyg)
+:::
+
+## Issues as a public scratchpad {.smaller}
+
+::: {.incremental}
+- If you get a new idea, **write an issue**.
+- If you learn something new about an existing idea, **comment on the issue**.
+- If an idea grows to burst its banks, **break it into smaller issues**.
+- If two ideas are related, **cross-link the issues**.
+- If an idea is no longer relevant, **close the issue**.
+:::
+
+::: {.fragment}
+::: {.callout-tip}
+If you can formulate it as a sentence, it's ready to be written down.
+:::
+:::
+
+*Why written?*
+
+- I forget, you forget, everybody forgets.
+- Never run out of things to work on.
+- Your sharpen your writing, and thinking.
+
+
+## Thought experiment
+
+:::: {columns}
+
+::: {.column width="50%"}
+Image of GitHub repo with empty issues.
+:::
+
+::: {.column width="50%"}
+Image of movement's repo.
+:::
+
+::::
+
+## The perks of a public scratchpad
+
+::: {.fragment}
+*Why public?*
+
+- Transparency builds trust and signals inclusivity.
+- Attracks like-minded people.
+- Other people solve your problems.
+- Opportunity to model healthy norms.
+:::
+
+## Pull Requests
+
+Make all changes through pull requests.
+
+:::: {columns}
+
+::: {.column width="50%"}
+- Lead by example.
+- Creates a documented track record
+- Allows for review.
+- Every review is a chance to embody your norms.
+:::
+
+::: {.column width="50%"}
+Insert image of a pull request from movement
+:::
+
+::::
+
+## Scale your comms alongside your community
+
+Insert image of movement/BrainGlobe communication channels.
+
+::: {.fragment}
+::: {.callout-warning}
+Past a certain size, curating and managing all these channels
+requires significant effort.
+:::
+:::
+
+## Trust signals {.smaller}
+
+::: {.fragment}
+:::{.callout-tip appearance="simple" icon="false"}
+## :memo: Write a software abstract
+- You invite collaboration and scrutiny early.
+- You show that you're building thoughtfully.
+- In disagreements, you have something to point to.
+:::
+:::
+
+::: {.fragment}
+:::{.callout-tip appearance="simple" icon="false"}
+## :rocket: Release early, release often
 
 The trust you build through consistent, predictable releases compounds over time—worth far more than the polish you sacrifice by not waiting for perfection.
+:::
+:::
 
+::: {.fragment}
+::: {.callout-tip appearance="simple" icon="false"}
+## :hugging_face: Embrace radically open communication
 
+- Write everything down. 
+- Make it public by default.
+- Watch the magic happen.
+:::
+:::
 
+## The key takeaway
+
+If you behave like a trustworthy project from the beginning, people will treat you like one, and help the project grow into what it promises to be.
+
+::: {.fragment}
+::: {.callout-tip appearance="simple" icon="false"}
+## {{< fa blog >}} Blogpost series
+
+[{{< meta links.blog >}}](https://{{< meta links.blog >}})
+:::
+
+::: {.callout-tip appearance="simple" icon="false"} 
+## {{< fa paper-plane >}} Find me online
+
+{{< fa brands github >}} [niksirbi](https://github.com/niksirbi) |
+{{< fa brands mastodon >}} [\@niksirbi\@neuromatch.social](https://neuromatch.social/@niksirbi) |
+{{< fa globe >}} {{< iconify simple-icons bluesky >}} [nikosirmpilatze.com](https://nikosirmpilatze.com)
+:::
+:::
