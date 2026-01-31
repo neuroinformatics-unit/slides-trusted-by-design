@@ -160,7 +160,9 @@ Source: [napari.org](https://napari.org)
 
 ## *movement*'s graphical abstract {.smaller}
 
+::: {.fragment}
 ![](img/movement_overview.png)
+:::
 
 ::: footer
 [movement.neuroinformatics.dev](https://movement.neuroinformatics.dev/)
@@ -181,8 +183,8 @@ In the early days of **movement**, [Mikkel Roald-Arbøl](https://roald-arboel.co
 Do it **publicly** and **up-front**.
 
 ::: {.incremental}
-- You sharpen your vision. :fist:
 - You invite collaboration and scrutiny early. :hugs:
+- You sharpen your vision. :fist:
 - In disagreements, you have something to point to. :compass:
 :::
 
