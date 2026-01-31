@@ -316,7 +316,7 @@ If you can formulate it as a sentence, it's ready to be written down.
 
 - Transparency builds trust.
 - A lively issue tracker signals activity.
-- Attracks like-minded people.
+- Attracts like-minded people.
 - Other people may solve your problems.
 
 ## Pull Requests
